@@ -1,0 +1,262 @@
+/* ============================================================
+   Stiftung Naturwissenschaft und Kirche – Custom Styles
+   ============================================================ */
+
+@import url('https://fonts.bunny.net/css?family=libertinus-serif:400,400i,700|libertinus-sans:400,700&display=swap');
+
+:root {
+  --nwk-green:    #29b716;
+  --nwk-green-dk: #1f8e10;
+  --nwk-gray:     #636363;
+  --nwk-light:    #f7f8f9;
+  --nwk-text:     #222222;
+  --font-serif:   'Libertinus Serif', Georgia, serif;
+  --font-sans:    'Libertinus Sans', Arial, sans-serif;
+}
+
+/* --- Grundlayout ------------------------------------------ */
+
+body {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: var(--nwk-text);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+}
+
+a {
+  color: var(--nwk-green-dk);
+}
+
+a:hover {
+  color: var(--nwk-green);
+}
+
+/* --- Top-Bar ---------------------------------------------- */
+
+.top-bar {
+  background-color: var(--nwk-gray);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-family: var(--font-sans);
+  padding: 0.35rem 0;
+  letter-spacing: 0.03em;
+}
+
+/* --- Navbar ----------------------------------------------- */
+
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 3px solid var(--nwk-green);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-brand {
+  padding: 0.5rem 0;
+}
+
+.navbar-brand img {
+  height: 90px;
+  width: auto;
+}
+
+.navbar-nav .nav-link {
+  color: var(--nwk-text) !important;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  padding: 1.2rem 1rem !important;
+  transition: color 0.2s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--nwk-green) !important;
+}
+
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+/* --- Seitenüberschriften ---------------------------------- */
+
+.page-header {
+  border-left: 5px solid var(--nwk-green);
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  font-size: 1.75rem;
+  color: var(--nwk-text);
+  margin: 0;
+}
+
+/* --- Hero ------------------------------------------------- */
+
+.hero {
+  background-color: var(--nwk-light);
+  border-bottom: 3px solid var(--nwk-green);
+  padding: 3rem 0 2.5rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: var(--nwk-text);
+  margin-bottom: 0.75rem;
+}
+
+.hero-logo {
+  max-width: 480px;
+  width: 90%;
+  height: auto;
+}
+
+.hero .lead {
+  color: var(--nwk-gray);
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+/* --- Cards ------------------------------------------------ */
+
+.card {
+  border: none;
+  border-radius: 0;
+  border-top: 3px solid var(--nwk-green);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.card-title {
+  color: var(--nwk-text);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* --- Tabellen --------------------------------------------- */
+
+.table thead th {
+  background-color: var(--nwk-gray);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  border: none;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: rgba(41, 183, 22, 0.06);
+}
+
+/* --- Wettbewerbs-Badges ----------------------------------- */
+
+.badge-aktuell {
+  background-color: var(--nwk-green);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.3em 0.75em;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.badge-vergangen {
+  background-color: #d0d0d0;
+  color: #555;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  padding: 0.3em 0.75em;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+/* --- Buttons ---------------------------------------------- */
+
+.btn-primary {
+  background-color: var(--nwk-green);
+  border-color: var(--nwk-green);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--nwk-green-dk);
+  border-color: var(--nwk-green-dk);
+}
+
+.btn-outline-nwk {
+  color: var(--nwk-green-dk);
+  border-color: var(--nwk-green);
+  background-color: transparent;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+}
+
+.btn-outline-nwk:hover {
+  background-color: var(--nwk-green);
+  border-color: var(--nwk-green);
+  color: #ffffff;
+}
+
+/* --- Zitat-Box -------------------------------------------- */
+
+blockquote.nwk-quote {
+  border-left: 4px solid var(--nwk-green);
+  padding: 1rem 1.5rem;
+  font-style: italic;
+  color: #444;
+  margin: 2rem 0;
+}
+
+/* --- Steckbrief-Tabelle ----------------------------------- */
+
+.table-steckbrief th {
+  background-color: transparent;
+  color: var(--nwk-text);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  width: 40%;
+}
+
+/* --- Footer ----------------------------------------------- */
+
+footer {
+  background-color: var(--nwk-gray);
+  color: rgba(255, 255, 255, 0.8);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  padding: 2rem 0 1.5rem;
+  margin-top: 4rem;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+footer .footer-divider {
+  border-color: rgba(255, 255, 255, 0.2);
+  margin: 1rem 0;
+}
