@@ -233,6 +233,10 @@ blockquote.nwk-quote {
   margin: 2rem 0;
 }
 
+.blockquote-footer {
+   background-color: transparent; 
+}
+
 /* --- Steckbrief-Tabelle ----------------------------------- */
 
 .table-steckbrief th {
