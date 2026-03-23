@@ -122,6 +122,8 @@ Die folgenden Änderungen wurden schrittweise auf Basis von Feedback vorgenommen
 | 11 | Libertinus Sans für alle h1–h6 gesetzt | style.css |
 | 12 | Preisträger Essaywettbewerb 2023 mit PDF-Links ergänzt | aktivitaeten.html |
 | 13 | Seitenbalken auf 80% Höhe via `::before` Pseudo-Element | style.css |
+| 14 | `blockquote-footer` transparenter Hintergrund ergänzt | style.css |
+| 15 | Grünen Balken neben Zitat oben und unten verkürzt (padding, margin-bottom) | style.css |
 
 ---
 
