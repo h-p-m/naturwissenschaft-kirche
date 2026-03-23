@@ -227,14 +227,15 @@ a:hover {
 
 blockquote.nwk-quote {
   border-left: 4px solid var(--nwk-green);
-  padding: 1rem 1.5rem;
+  padding: 0.25rem 1.5rem 0.1rem;
   font-style: italic;
   color: #444;
   margin: 2rem 0;
 }
 
 .blockquote-footer {
-   background-color: transparent; 
+  background-color: transparent;
+  margin-bottom: 0;
 }
 
 /* --- Steckbrief-Tabelle ----------------------------------- */
