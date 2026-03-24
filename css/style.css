@@ -74,7 +74,7 @@ a:hover {
 .navbar-nav .nav-link {
   color: var(--nwk-text) !important;
   font-family: var(--font-sans);
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   letter-spacing: 0.04em;
   padding: 1.2rem 1rem !important;
   transition: color 0.2s;
